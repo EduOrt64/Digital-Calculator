@@ -87,7 +87,7 @@ if (operator === "+"){
     previousValue *= currentValue;
 } else if (operator ==="÷"){
     previousValue /= currentValue;
-} else (previousValue / currentValue) * 100 
+} else if (operator ==="%") {previousValue = (previousValue / currentValue) * 100} 
 
 };
 //function to add decimal
