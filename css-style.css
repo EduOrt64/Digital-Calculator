@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+
+#general-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  width: 400px;
+  height: 560px;
+  border: rgba(0, 255, 238, 0.762) solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.screen {
+  width: 350px;
+  height: 120px;
+  border: rgb(0, 183, 255) solid 2px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  align-items: center;
+}
+
+.screen img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+
+  margin-bottom: 15px;
+}
+
+.text-screen-cont {
+  width: 220px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.current {
+  color: rgba(0, 255, 238, 0.762);
+  font-size: 28px;
+  font-family: "Michroma", serif;
+}
+.previous {
+  color: rgba(0, 255, 238, 0.762);
+  font-size: 20px;
+  font-family: "Michroma", serif;
+}
+.previous,
+.current {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 90px;
+  height: 60px;
+  border-radius: 50px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(0.95);
+}
+
+.but-container {
+  margin-top: 8px;
+  width: 390px;
+  height: 390px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1px;
+}
+
+.but-line5 {
+  margin-top: 5px;
+}
+
+.but-line5 button:first-child {
+  width: 190px;
+  height: 60px;
+}
+.blue-line {
+  background-color: #31d9df;
+  border: none;
+  box-shadow: 2px 2px 5px #5c7d85, -2px -2px 5px #7ba9b5;
+  color: rgb(101, 102, 103);
+}
+
+.numbers {
+  background-color: #466fa3;
+  border: none;
+
+  color: rgb(243, 248, 254);
+}
+.decimal {
+  background-color: #466fa3;
+  border: none;
+
+  color: rgb(243, 248, 254);
+}
+.light-green {
+  background-color: #61ebb9;
+  border: none;
+}
+.purple {
+  background-color: #eb61d9;
+  border: none;
+}
